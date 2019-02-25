@@ -26,10 +26,10 @@ func (s Stack) Top() (interface{}, error){
 	return s[len(s) - 1], nil
 }
 
-func (s *Stack) Len()int{
-	return len(*s)
+func (s Stack) Len()int{
+	return len(s)
 }
 
-func (s *Stack) IsEmpty() bool {
-	return (len(*s) == 0)
+func (s Stack) IsEmpty() bool {
+	return (len(s) == 0)
 }
